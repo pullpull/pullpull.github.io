@@ -1,13 +1,266 @@
-<!--<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chen, Jun-Cheng | Academia Sinica</title>
+  <meta name="description" content="Modern academic homepage redesign for Chen, Jun-Cheng, Academia Sinica." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-bg"></div>
 
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="refresh" content="0;url=http://140.109.21.185" />
-		<title> Kinship Face @ Academia Sinica </title>
-	</head>
-	<body>
-		<h1> </h1>
-	</body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="#">
+        <img src="AIIU_logo.png"  alt="Academia Sinica logo" class="brand-logo" />
+        <div class="brand-text">
+          <!-- <div class="brand-title">Jun-Cheng Chen</div> -->
+          <div class="brand-title">Artificial Intelligence and Image Understanding Lab</div>
+        </div>
+      </a>
+
+      <div class="topbar-actions">
+        <div class="lang-switch" aria-label="Language switch">
+          <a href="#" class="active">EN</a>
+          <span>/</span>
+          <a href="#">中文</a>
+        </div>
+      </div>
+    </header>
+
+    <nav class="navbar">
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <div class="nav-links">
+        <a href="#about" class="active">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#research">Research Interests</a>
+        <a href="#talks">Invited Talks</a>
+        <a href="#honors">Honors</a>
+        <a href="#publications">Publications</a>
+        <a href="https://aiiu-lab.github.io/">Lab</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <main>
+      <section id="about" class="hero-banner">
+        <img src="banner.png" alt="Banner portrait of Chen, Jun-Cheng" class="hero-banner-image" />
+          <div class="hero-overlay">
+
+          <h1>Jun-Cheng Chen</h1>
+          <br>
+          <p class="hero-role">Associate Research Fellow (Associate Professor)</p>
+          <p class="hero-text">
+           I am an Associate Research Fellow at the Research Center for Information Technology Innovation, 
+           Academia Sinica, where I lead the Artificial Intelligence and Image Understanding Lab. 
+           My research spans machine learning, computer vision, and multimedia analysis, with a long-term
+            vision of advancing intelligent systems from perception to action. We ultimately aim to develop trustworthy, robust, 
+            and human-centric AI systems that can perceive, reason, interact, and act effectively in the real world.
+          </p>
+           
+          <br>
+          <div class="announcement">
+            <span class="announcement-icon">📣</span>
+            <span>We are hiring <a href="https://www.citi.sinica.edu.tw/main/recruit-assistants" class="more-link">full-time and part-time research assistants</a>.</span>
+          </div>
+          <!--
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#publications">View Publications</a>
+            <a class="btn btn-secondary" href="#">Download CV</a>
+            <a class="btn btn-secondary" href="#contact">Contact</a>
+          </div>
+         -->
+        </div>
+      </section>
+
+      <section class="contact-strip" id="contact">
+        <div class="contact-item">
+          <div class="icon">📍</div>
+          <div>
+            <div class="contact-label">Address</div>
+            <div>No. 128, Sec. 2, Academia Rd., Nankang, Taipei 11529, Taiwan</div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="icon">📞</div>
+          <div>
+            <div class="contact-label">Phone / Fax</div>
+            <div>Tel: +886-2-2787-2300 ext. 2356</div>
+            <div>Fax: +886-2-2785-2701</div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="icon">✉️</div>
+          <div>
+            <div class="contact-label">Email</div>
+            <div><a href="mailto:pullpull@citi.sinica.edu.tw">pullpull@citi.sinica.edu.tw</a></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card-grid three-up">
+        <article class="card" id="education">
+          <div class="card-head">
+            <h2>Education</h2>
+            <span class="card-arrow">→</span>
+          </div>
+          <ul class="timeline">
+            <li><strong>Ph.D. in Computer Science</strong><span>University of Maryland College Park, 2016</span></li>
+            <li><strong>M.S. in Computer Science and Information Engineering</strong><span>National Taiwan University, 2006</span></li>
+            <li><strong>B.S. in Computer Science and Information Engineering</strong><span>National Taiwan University, 2004</span></li>
+          </ul>
+          <a href="https://homepage.citi.sinica.edu.tw/pages/pullpull/education_en.html" class="more-link">View all</a>
+        </article>
+
+        <article class="card" id="experience">
+          <div class="card-head">
+            <h2>Experience</h2>
+            <span class="card-arrow">→</span>
+          </div>
+          <ul class="timeline">
+            <li><strong>Associate Research Fellow</strong><span>Academia Sinica, 2023 – Present</span></li>
+            <li><strong>Assistant Research Fellow</strong><span>Academia Sinica, 2019 – 2023</span></li>
+            <li><strong>Postdoctoral Research Fellow</strong><span>University of Maryland College Park, 2017 – 2019</span></li>
+          </ul>
+          <a href="https://homepage.citi.sinica.edu.tw/pages/pullpull/experience_en.html" class="more-link">View all</a>
+        </article>
+
+        <article class="card" id="research">
+          <div class="card-head">
+            <h2>Research Interests</h2>
+            <span class="card-arrow">→</span>
+          </div>
+          <div class="tag-list">
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Computer Vision</span>
+            <span class="tag">AI safety</span>
+            <span class="tag">Generative AI</span>
+            <span class="tag">Agentic AI</span>
+            <span class="tag">Physical AI</span>
+          </div>
+        </article>
+      </section>
+
+      <section class="card-grid lower-grid">
+        <article class="card" id="talks">
+          <div class="card-head">
+            <h2>Invited Talks</h2>
+            <span class="card-arrow">→</span>
+          </div>
+          <ul class="bullet-list">
+            <li>
+              <strong>From Noise to Desired Visual with Control: Guided Diffusion for Some Image/Video Application</strong>
+              <span>National Tsing Hua University, 2026</span>
+            </li>
+            <li>
+              <strong>From Noise to Desired Visual: Guided Diffusion for Some Image/Video Application</strong>
+              <span>National Taiwan University of Science and Technology, 2025</span>
+            </li>
+            <li>
+              <strong>A Brief Overview of Recent Advancement of Generative AI and New Challenges to Deepfake Detection</strong>
+              <span><a href="https://mfc.nist.gov/OpenMFC2023workshop/#Agenda">OpenMFC Workshop</a>, 2023</span>
+            </li>
+
+          </ul>
+          <a href="https://homepage.citi.sinica.edu.tw/pages/pullpull/invited_talk_en.html" class="more-link">View all</a>
+        </article>
+
+        <article class="card" id="honors">
+          <div class="card-head">
+            <h2>Selected Honors</h2>
+            <span class="card-arrow">→</span>
+          </div>
+          <ul class="bullet-list">
+            <li><strong>CE Magazine Best Paper Award</strong><span>ICCE, 2025</span></li>
+            <li><strong>Best Paper Award Third Place</strong><span>APSIPA ASC, 2023</span></li>
+            <li><strong>Career Development Award</strong><span>Academia Sinica, 2021</span></li>
+            <li><strong>Best Technical Full Paper Award</strong><span>ACM MM, 2006</span></li>
+          </ul>
+          <a href="https://homepage.citi.sinica.edu.tw/pages/pullpull/honors_en.html" class="more-link">View all</a>
+        </article>
+
+        <article class="card wide-card" id="publications">
+          <div class="card-head">
+            <h2>Selected Publications</h2>
+            <span class="card-arrow">→</span>
+          </div>
+
+          <div class="publication-list">
+            <div class="publication">
+              <div class="pub-icon">📄</div>
+              <div>
+                <strong><a href="https://openreview.net/pdf?id=aVa7etWnwF">GOT-Edit: Geometry-Aware Generic Object Tracking via Online Model Editing</a></strong>
+                <span>International Conference on Learning Representations (ICLR), 2026</span>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="pub-icon">📄</div>
+              <div>
+                <strong><a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Han_Towards_More_General_Video-based_Deepfake_Detection_through_Facial_Component_Guided_CVPR_2025_paper.pdf">Towards More General Video-based Deepfake Detection through Facial Feature Guided Adaptation for Foundation Model</a></strong>
+                <span>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2025</span>
+              </div>
+            </div>
+
+            <div class="publication">
+              <div class="pub-icon">📄</div>
+              <div>
+                <strong><a href="https://dl.acm.org/doi/pdf/10.1145/3680528.3687635">Camera Settings as Tokens: Modeling Photography on Latent Diffusion Models</a></strong>
+                <span>Siggraph Asia, 2024</span>
+              </div>
+            </div>
+          </div>
+
+          <!--<a href="#" class="more-link">View all publications</a>-->
+          <a href="https://homepage.citi.sinica.edu.tw/pages/pullpull/publications_en.html" class="more-link">View all publications</a>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-brand">
+        <div class="footer-logo-wrap">
+          <img src="academia-sinica-logo.png" alt="Academia Sinica logo" class="footer-logo" />
+        </div>
+        <div>
+          <div class="footer-title">Academia Sinica</div>
+          <div class="footer-subtitle">ResearchCenter for Information Technology Innovation</div>
+          <div class="footer-motto">Artificial Intelligence and Image Understanding Lab</div>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <p>No. 128, Sec. 2, Academia Rd., Nankang, Taipei 11529, Taiwan</p>
+        <p>Tel: +886-2-2787-2300 ext. 2356</p>
+        <p><a href="mailto:pullpull@citi.sinica.edu.tw">pullpull@citi.sinica.edu.tw</a></p>
+      </div>
+
+      
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#research">Research Interests</a>
+          <a href="#publications">Publications</a>
+          <a href="#talks">Invited Talks</a>
+          <a href="#honors">Honors</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    
+    </footer>
+
+    <div class="copyright">© Jun-Cheng Chen 2026, assisted by ChatGPT and GPT-Image-2.</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
-!-->
